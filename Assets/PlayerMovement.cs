@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     [SerializeField]
     private Vector3 speed = new Vector3(5,0,0);
 
