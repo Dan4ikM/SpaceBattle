@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ProjectileMovement : MonoBehaviour
-{
+public class AsteroidMovement : MonoBehaviour {
+
     [SerializeField]
-    private float speed = 5f;
+    private Vector3 speed = new Vector3(0, 3, 0);
     [SerializeField]
-    private float lifetime = 2;
+    private float lifetime = 10;
 
     private void Awake()
     {
@@ -16,6 +16,6 @@ public class ProjectileMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.position = transform.position + transform.up * speed * Time.deltaTime;
+        transform.position = transform.position + speed * Time.deltaTime;
     }
 }
