@@ -22,8 +22,7 @@ GameObject:
   - component: {fileID: 33296124761428402}
   - component: {fileID: 23970120307081010}
   - component: {fileID: 65559286388904988}
-  - component: {fileID: 114079817570668338}
-  - component: {fileID: 114409524901102178}
+  - component: {fileID: 114854395128438162}
   m_Layer: 0
   m_Name: EnemyShip
   m_TagString: Untagged
@@ -98,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114079817570668338
+--- !u!114 &114854395128438162
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -106,23 +105,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1487760943941052}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e17d5c03485cdee49a8734c5c46d85e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 619244320bdf0c2439f4685ff29512eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  lifetime: 5
---- !u!114 &114409524901102178
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1487760943941052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ab110e4992c2e143a9b97ee1ca14806, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  _tag: Enemy
+  Life: 1
+  Damage: 1
+  Speed: 1
   projectilePrefab: {fileID: 1406136265832616, guid: 1a4991f582d9b3c40941aaa4431f7e16,
     type: 2}
-  rate: 0.2
-  cooling: 0
+  gunPoint:
+  - {fileID: 4871039908270898}
+  Rate: 1
+  IsCooling: 0

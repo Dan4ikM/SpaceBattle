@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 33400167993661540}
   - component: {fileID: 23306166776492366}
   - component: {fileID: 65140466771838778}
-  - component: {fileID: 114489501746736238}
   - component: {fileID: 54236704479991674}
+  - component: {fileID: 114238967613755068}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -113,7 +113,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114489501746736238
+--- !u!114 &114238967613755068
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -121,8 +121,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1092708369349216}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5380d8c2a9d8bd244b21eb89d9fc3b9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 61a3b0bc2ed6d524e9e1892b5b223f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0, y: -3, z: 0}
-  lifetime: 10
+  _tag: Enemy
+  Life: 1
+  Damage: 2
+  Speed: 2
