@@ -47,9 +47,6 @@ public class GameManager : MonoBehaviour
 
     public void Exit()
     {
-        if (EditorApplication.isPlaying)
-            EditorApplication.isPlaying = false;
-        else
-            Application.Quit();
+        Application.Quit();
     }
 }
