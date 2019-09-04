@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 135915520447176082}
   - component: {fileID: 114875341615128210}
   - component: {fileID: 54343253566127322}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5fbb137a677d05428af2f6431b0e71f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tag: 
   Life: 1
   Damage: 2
   Speed: 5

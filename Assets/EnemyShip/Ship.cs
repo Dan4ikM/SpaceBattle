@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyShip : Obstacle
+public class Ship : Obstacle
 {
     [SerializeField]
     private GameObject projectilePrefab;
@@ -37,13 +37,21 @@ public class EnemyShip : Obstacle
         IsCooling = false;
     }
 
-    protected void Shoot()
+    protected virtual void Shoot()
     {
         foreach (Transform point in gunPoint)
         {
             GameObject projectile = Instantiate(projectilePrefab, point);
-            projectile.transform.parent = null;
-            projectile.GetComponent<Projectile>().Initialize(gameObject.tag);
+            projectile.transform.parent = transform.parent;
+            projectile.GetComponent<Projectile>().Initialize(gameObject.tag, ParentObj);
         }
+    }
+
+    protected override void Destruction(GameObject whoDestroy)
+    {
+        base.Destruction(whoDestroy);
+
+        if (whoDestroy != null)
+            whoDestroy.GetComponent<PlayerShip>().Set_Points(Points);
     }
 }

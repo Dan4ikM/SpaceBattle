@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65140466771838778}
   - component: {fileID: 54236704479991674}
   - component: {fileID: 114238967613755068}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Asteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1092708369349216}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -124,7 +124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a3b0bc2ed6d524e9e1892b5b223f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tag: Enemy
+  ParentObj: {fileID: 0}
+  Points: 1
   Life: 1
   Damage: 2
   Speed: 2
