@@ -16,6 +16,6 @@ public class EnemyMovement : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        transform.position = transform.position + transform.up * speed * Time.deltaTime;
+        transform.position = transform.position + transform.forward * speed * Time.deltaTime;
     }
 }
